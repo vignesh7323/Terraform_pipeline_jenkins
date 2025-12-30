@@ -19,7 +19,7 @@ stages {
 
 }
 
-    stage ('Terraform inir') {
+    stage ('Terraform init') {
         steps {
             dir ("${TF_WORKDIR}") {
                 sh 'terraform init'
@@ -53,5 +53,3 @@ stages {
         }
 
     }
-
-
